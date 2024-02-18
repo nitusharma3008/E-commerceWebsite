@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="signup1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <center>
+            <div class="login-main">
+                <form action="#" method="get" onsubmit="return velidate()">
+                    <div class="login-logo">
+                        <img src="img/imageslogo.png" alt="some reason" class="img-logo">
+                    </div>
+                    <div class="infomation-class">
+                        <div class="form-group">
+                            <input type="text" name="email" placeholder="Enter username" id="users"
+                                class="form-control">
+                            <span id="user" class="text-danger font-weight-bold "></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" placeholder="Enter password" id="pass1"
+                                class="form-control">
+                            <span id="pass2" class="text-danger font-weight-bold"></span>
+                        </div>
+
+                        <input type="checkbox" class="remind1">
+                        <label name="remind">Remind me</label><br><br>
+                        <input type="submit" value="Login" class="login-button">
+                    </div>
+                </form>
+            </div>
+        </center>
+    </div>
+    <script>
+
+        function velidate() {
+
+            var username = document.getElementById("users").value;
+
+            var passworddata = document.getElementById("pass1").value;
+
+            var atposition = username.indexOf("@");
+            var dotposition = username.lastIndexOf(".");
+
+            if(username =="")
+            {
+                document.getElementById("user").innerHTML="Please enter username";
+                return false;
+            }
+
+           if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= username.length)
+            {
+                document.getElementById("user").innerHTML="Please enter valid username";
+                return false;
+            }else{
+                document.getElementById("user").innerHTML=" ";
+            }
+
+
+
+            if(passworddata=="")
+            {
+                document.getElementById("pass2").innerHTML="Please Enter pass";
+                return false;
+            }
+
+            if(passworddata.length<5||passworddata.length>20)
+            {
+                document.getElementById("pass2").innerHTML="Please enter valid password";
+                return false;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

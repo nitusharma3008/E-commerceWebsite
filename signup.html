@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signup1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="signbody">
+
+            <div class="singmain">
+
+                <form action="#" method="post" onsubmit="return formvelidate()">
+                    <div class="tiltle-heading">
+                        Sign Up
+                    </div>
+                    <div class="flex-class">
+
+                        <div class="form-group"> 
+
+                            <input type="text" name="email" placeholder="First Name" id="firstname" class="form-control"
+                                autocomplete="off">
+                            <span id="fname" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" name="email" placeholder="Last Name" id="lastname" class="form-control"
+                                autocomplete="off">
+                            <span id="lname" class="text-danger font-weight-bold"></span>
+                        </div>
+
+                    </div>
+                    <div class="center-content">
+                        <div class="form-group">
+
+                            <input type="text" name="email" placeholder="Email" id="email" class="form-control"
+                                autocomplete="off">
+                            <span id="emails" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+
+                            <input type="password" name="pass1" placeholder="Password" id="pass" class="form-control"
+                                autocomplete="off">
+                            <span id="passdata" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+
+                            <input type="password" name="pass2" placeholder="Confirm Password" id="cpass"
+                                class="form-control" autocomplete="off">
+                            <span id="cpassdata" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" name="Address" placeholder="Address" id="add" class="form-control"
+                                autocomplete="off">
+                            <span id="addres" class="text-danger font-weight-bold"></span>
+                        </div>
+                    </div>
+                    <div class="checkbox-instruction">
+                        <center>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1"> I accept the Terms of Used & Privacy Policy</label><br>
+                        </center>
+                    </div>
+
+                    <center>
+                        <input type="submit" class="button-submit" value="Submit">
+                    </center>
+
+                    <div class="goto-login">
+                        <center>
+
+                            <label for="vehicle1"> Already have an Account?<a href="login.html" target="_self"> Login
+                                    Here</a></label>
+
+                        </center>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="javaScript.js">
+
+
+    </script>
+</body>
+
+</html>
